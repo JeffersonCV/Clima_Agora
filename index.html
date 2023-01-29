@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Ubuntu:wght@400;500&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Clima Agora</title>
+</head>
+
+<body>
+    <header class="header"> <!--Parte superior do app-->
+
+        <div class="city-search">
+            <input class="search-bar" id="city-search-input" type="text" placeholder="Clima agora de qual cidade?">
+            <button class="search-button" id="city-search-button">
+                <img class="search-icon" src="./assets/search-icon.svg" width="30"
+                    alt="Ícone de uma lupa para busca"></button>
+        </div>
+
+        <div class="current-date" id="current-date">Data de hoje</div>
+
+        <div class="city-name" id="city-name">Local escolhido</div>
+
+    </header> <!-- final da parte superior -->
+
+    <section class="current-temperature">
+        <img class="weather-icon" id="weather-icon" src="./assets/loading-icon.svg" aria-hidden="true"
+            alt="Ícone do clima agora">
+        <div class="temperature-description" id="weather-description">...</div>
+        <div class="info-label">Temperatura agora</div>
+        <div class="current-temperature-info" id="current-temperature">...</div>
+    </section>
+
+    <div class="bottom-container">
+        <section class="weather-details">
+
+            <div class="weather-details-itens">
+                <div class="weather-details-label">Vento</div>
+                <div class="weather-details-value" id="wind-speed">...</div>
+            </div>
+
+            <div class="weather-details-itens">
+                <div class="weather-details-label">Sensação</div>
+                <div class="weather-details-value" id="feels-like-temp">...</div>
+            </div>
+
+            <div class="weather-details-itens">
+                <div class="weather-details-label">Umidade</div>
+                <div class="weather-details-value" id="current-humidity">...</div>
+            </div>
+
+        </section>
+
+        <section class="sunset-sunrise">
+
+            <div class="sun-item">
+                <img class="sun-icon" src="./assets/sunrise.svg" width="30" alt="Nascer do sol">
+                <div class="sun-value" id="sunrise-time">...</div>
+            </div>
+
+            <div class="sun-item">
+                <img class="sun-icon" src="./assets/sunset.svg" width="30" alt="Põr do sol">
+                <div class="sun-value" id="sunset-time">...</div>
+            </div>
+        </section>
+
+        <div style="text-align: center; color: #808080;">Powered by Dev Jefferson</div>
+    </div>
+
+
+    <script src="./app.js"></script>
+
+
+</body>
+
+</html>
